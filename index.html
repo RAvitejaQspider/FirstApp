@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>total response</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function automatic() {
+            var username = document.getElementById("res").value;
+            var password = document.getElementById("pas").value;
+            var regx =/[^a]123/;
+            var regx1=/[p]N/;
+            
+            if (regx.test(username)) 
+            {
+                alert("valid username")
+            } else if(regx1.test(password))
+            {
+                  alert("valid password")
+            }
+            else{
+                alert("invalid")
+            }
+        }
+    </script>
+</head>
+<body>
+
+
+    <section id="sec">
+    <form action="index2.html" id="form">
+
+        <input type="text" id="res" placeholder="enter a valide username"><br>
+        
+        <input type="password" id="pas" placeholder="enter valid password"><br>
+        
+        <button type="button" onclick="automatic()">submit</button>
+        </form>
+    </section>
+</body>
+</html>
